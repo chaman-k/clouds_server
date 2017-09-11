@@ -1,0 +1,19 @@
+.margin0{
+  margin: 0px;
+}
+.padding0{
+  padding: 0px;
+}
+.margin10{
+  margin: 10px;
+}
+.pad10{
+  padding: 10px;
+}
+.hero{
+  width: inherit;
+  height: 200px;
+  position: absolute;
+  z-index: -1;
+  background: #10b8f7;
+}

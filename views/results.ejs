@@ -1,0 +1,42 @@
+<% winners.forEach(function(winner){ %>
+  <div class="col s12 m6 l4"><!-- example card -->
+  <div class="card tab-shadow center pad10bot">
+    <p class="result-title teal accent-3 pad10"> <%= winner.eventName %></p>
+    <div class="row pad10 margin0">
+      <div class="col s2">
+        1.
+      </div>
+      <div class="col s5">
+        <%= winner.studentName1 %>
+      </div>
+      <div class="col s5">
+        <%= winner.studentClass1 %>
+      </div>
+    </div>
+    <hr/>
+    <div class="row pad10 margin0">
+      <div class="col s2">
+        2.
+      </div>
+      <div class="col s5">
+        <%= winner.studentName2 %>
+      </div>
+      <div class="col s5">
+        <%= winner.studentClass2 %>
+      </div>
+    </div>
+    <hr/>
+    <div class="row pad10 margin0">
+      <div class="col s2">
+        3.
+      </div>
+      <div class="col s5">
+        <%= winner.studentName3 %>
+      </div>
+      <div class="col s5">
+        <%= winner.studentClass3 %>
+      </div>
+    </div>
+  </div>
+</div><!-- card ends here -->
+<% }) %>

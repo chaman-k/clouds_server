@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<%- include('head') %>
+
+
+   <body>
+     <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script>
+        $(document).ready(function(){
+          $(".button-collapse").sideNav();
+          $("ul.tabs").tabs({ onShow: function(tab) { $('ul.tabs').tabs(); } });
+
+        });
+        </script>
+
+
+        <%- include('navbar') %>
+
+
+        <%- include('home') %>
+
+      <!-- events tab contents -->
+     <div id="events" class="col s12">
+       <div class="hero">
+         <!-- <img src="images/sahyadri.jpg" /> -->
+       </div>
+       <div class="container">
+         <div class="cards cards-3">
+           <div class="col s12 tab-shadow">
+              <ul class="tabs">
+                <li class="tab col s3"><a id="events_tab"class="active" href="#allevents">All Events</a></li>
+                <li class="tab col s3"><a href="#results">Results</a></li>
+                <li class="tab col s3"><a href="#scoreboard">ScoreBoard</a></li>
+              </ul>
+            </div>
+
+            <!-- results tab contents-->
+            <div class="row pad10" id="results">
+                <div class="row">
+
+                  <!-- add results cards here -->
+                  <%- include('results') %>
+
+                </div>
+            </div>
+            <div class="row pad10" id="scoreboard">
+
+            </div>
+
+            <!-- events sub tab contents -->
+            <div id="allevents"class="row pad10">
+               <div class="col s12 m6 l4">
+                 <div class="card card1 hoverable">
+                   <div class="card-content white-text">
+                     <span class="card-title pad70top">Counter Strike</span>
+                     <p>4 vs 4 inter branch counter strike tournament.</p>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="col s12 m6 l4">
+                 <div class="card card2 hoverable">
+                   <div class="card-content white-text">
+                     <span class="card-title pad70top">Hackathon</span>
+                     <p>24 hour android hackathon on Virtual reality.</p>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="col s12 m6 l4">
+                 <div class="card card3 hoverable">
+                   <div class="card-content white-text">
+                     <span class="card-title pad70top">Foodathon</span>
+                     <p>Hounouring foodies in the right way with food.</p>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="col s12 m6 l4">
+                 <div class="card card4 hoverable">
+                   <div class="card-content white-text">
+                     <span class="card-title pad70top">Code Gladiators</span>
+                     <p>Immerse into full round of code wars on python.</p>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="col s12 m6 l4">
+                 <div class="card card5 hoverable">
+                   <div class="card-content white-text">
+                     <span class="card-title pad70top">Treassure hunt</span>
+                     <p>4x inter branch treasure hunt competition.</p>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="col s12 m6 l4">
+                 <div class="card card6 hoverable">
+                   <div class="card-content white-text">
+                     <span class="card-title pad70top">Tug of war</span>
+                     <p>8 vs 8 inter branch Tug of war competition.</p>
+                   </div>
+                 </div>
+               </div>
+
+             </div>
+
+
+         </div>
+
+     </div>
+     </div>
+
+     <%- include('members') %>
+     <%- include('about') %>
+
+    <%- include('footer') %>
+   </body>
+
+ </html>

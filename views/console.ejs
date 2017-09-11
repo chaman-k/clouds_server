@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+<%- include('head') %>
+   </head>
+
+
+   <body>
+     <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script>
+        $(document).ready(function(){
+          $(".button-collapse").sideNav();
+          $("ul.tabs").tabs({ onShow: function(tab) { $('ul.tabs').tabs(); } });
+        });
+
+        </script>
+        <%- include('navbar') %>
+        <div class="row">
+   <form id="winners" class="col s12">
+     <div class="row">
+       <div class="input-field col s12">
+         <input id="event_name" type="text" class="validate" name="eventName" required>
+         <label for="event_name">Event name</label>
+       </div>
+       <div class="input-field col s6">
+         <input id="student_name1" type="text" class="validate" name="studentName1" required>
+         <label for="student_name1">First place</label>
+       </div>
+       <div class="input-field col s6">
+         <input id="student_class1" type="text" class="validate" name="studentClass1" required>
+         <label for="student_class1">Class</label>
+       </div>
+       <div class="input-field col s6">
+         <input id="student_name2" type="text" class="validate" name="studentName2" required>
+         <label for="student_name2">Second place</label>
+       </div>
+       <div class="input-field col s6">
+         <input id="student_class2" type="text" class="validate" name="studentClass2" required>
+         <label for="student_class2">Class</label>
+       </div>
+       <div class="input-field col s6">
+         <input id="student_name3" type="text" class="validate" name="studentName3" required>
+         <label for="student_name3">Third place</label>
+       </div>
+       <div class="input-field col s6">
+         <input id="student_class3" type="text" class="validate" name="studentClass3" required>
+         <label for="student_class3">Class</label>
+       </div>
+       <button id="submit" class="btn waves-effect waves-light">Submit
+   <i class="material-icons right"></i>
+  </button>
+     </div>
+
+
+   </form>
+   <script type="text/javascript">
+   $("#submit").click(function() {
+
+
+     $.ajax({
+            type: "POST",
+            url: "/winners",
+            data: $("#winners").serialize(), // serializes the form's elements.
+            success: function(data)
+            {
+                alert(data); // show response from the php script.
+            }
+          });
+
+     return false; // avoid to execute the actual submit of the form.
+ });
+   </script>
+ </div>
+      <footer class="page-footer">
+<%- include('footer') %>
+        </footer>
+    </body>
+
+  </html>
