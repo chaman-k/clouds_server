@@ -1,13 +1,21 @@
 {
-  "name": "CLOUDS Website",
+  "name": "clouds_server",
   "version": "1.0.0",
-  "description": "Node JS webserver",
+  "description": "clouds website",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaman-k/clouds_server.git"
+  },
   "author": "Chaman",
-  "license": "MIT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaman-k/clouds_server/issues"
+  },
+  "homepage": "https://github.com/chaman-k/clouds_server#readme",
   "dependencies": {
     "body-parser": "*",
     "connect-flash": "*",

@@ -5,7 +5,7 @@ var path = require('path');
 var mongoose = require('mongoose');
 //var fs = require('fs');
 
-mongoose.connect('mongodb://localhost/clouds');
+mongoose.connect('mongodb://admin:test@ds133004.mlab.com:33004/clouds');
 
 var result = require('./models/result');
 var user = require('./models/user');
