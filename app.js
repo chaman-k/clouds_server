@@ -49,11 +49,11 @@ app.get('/', function(req, res){
   });
 });
 
-app.get('/console', function(req, res){
+app.get('/console', function(req, res, next){
   return res.render('console');
 });
 
-app.get('/gallery', function(req, res){
+app.get('/gallery', function(req, res, next){
   return res.render('gallery');
 });
 
