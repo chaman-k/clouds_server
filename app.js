@@ -11,6 +11,7 @@ var result = require('./models/result');
 var user = require('./models/user');
 var album = require('./models/album');
 var image = require('./models/image');
+var scoreboard = require('./models/scoreboard');
 var db = mongoose.connection;
 //var router = express.router;
 //var expressValidator = require('express-validator');
@@ -54,6 +55,8 @@ app.get('/', function(req, res){
 app.get('/console', function(req, res, next){
   return res.render('console');
 });
+
+
 
 app.get('/gallery', function(req, res, next){
   album.find({}, function (err, docs){
@@ -105,6 +108,10 @@ app.get('/album_view', function(req, res, next){
   //     else console.log("event inserted into db");
   // });
 
+});
+
+app.get('/image_upload', function(req, res, next){
+  return res.render('image_upload');
 });
 
 app.post('/winners', function(req, res){

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="/css/styles.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="/css/card_images.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="/css/dropzone.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="Clouds Sahyadri">
+    <meta property="og:title" content="Clouds Sahyadri" />
+    <meta property="og:description" content="Computer Legends of Unified Department of Sahyadri" />
+    <meta property="og:image" itemprop="image" content="images/couds_image.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:updated_time" content="1440432930" />
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper light-blue">
+            <div class="container">
+                <a href="/gallery" class="left back_title"><i class="material-icons">arrow_back</i></a>
+                <ul class="right">
+                    <li><a href="mobile.html"><i class="material-icons">email</i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="col s12">
+        <div class="hero"></div>
+        <div class="container">
+            <div class="row center">
+                <div class="col s12 center">
+                    <p class="white-text cardtext">Upload Image</p>
+                    <!-- change album name -->
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="cards cards-3 padding1">
+
+                                        <section>
+                                            <p class="title">Share to Gallery</p>
+                                            <div id="dropzone" class="mar20">
+                                                <form action="https://api.kraken.io/v1/upload" class="dropzone dz-clickable" id="demo-upload">
+                                                    <div class="dz-message">Drop files here or click to upload.
+                                                        <br> <span class="note">(Your files will be automatically uploaded on dropping here)</span>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/js/dropzone.js"></script>
+
+
+</body>
+
+</html>
