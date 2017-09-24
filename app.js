@@ -9,6 +9,8 @@ mongoose.connect('mongodb://admin:test@ds133004.mlab.com:33004/clouds');
 
 var result = require('./models/result');
 var user = require('./models/user');
+var album = require('./models/album');
+var image = require('./models/image');
 var db = mongoose.connection;
 //var router = express.router;
 //var expressValidator = require('express-validator');
@@ -40,7 +42,7 @@ app.get('/', function(req, res){
     if(err){
       console.log("error finding results");
     }
-    if(docs){
+    else if(docs){
       res.render('index',{winners: docs});
     } else res.render('index');
     //results=JSON.stringify(docs);
@@ -54,10 +56,31 @@ app.get('/console', function(req, res, next){
 });
 
 app.get('/gallery', function(req, res, next){
-  return res.render('gallery');
+  album.find({}, function (err, docs){
+    if(err){
+      console.log("error fetching album");
+      res.render('gallery');
+    }
+    else if(docs){
+      res.render('gallery', {albums: docs});
+    }
+    else res,render('gallery');
+  });
+  //return res.render('gallery');
 });
 
 app.get('/album_view', function(req, res, next){
+  // var Album = new album({
+  //     albumName: "CLOUDS Farewell",
+  //     cover: "images/gallery/album_cover/sample.jpg",
+  //     description: "Description of the album"
+  //
+  //
+  // });
+  // Album.save(function (err){
+  //     if (err) console.log("error ");
+  //     else console.log("event inserted into db");
+  // });
   return res.render('album_view');
 });
 

@@ -91,7 +91,7 @@
         <!-- <a href="#" class="brand-logo valign-wrapper">&nbsp;<img src="images/clouds_logo.svg" class="responsive-img logo mar5top" width="100px" height="30px"/></a> -->
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="helpline.html">HelpLine</a></li>
           <li><a href="feedback.html">Feedback</a></li>
           <li><a href="collapsible.html">Login</a></li>
@@ -100,7 +100,7 @@
       </div>
 
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="helpline.html">HelpLine</a></li>
         <li><a href="feedback.html">Feedback</a></li>
         <li><a href="collapsible.html">Login</a></li>
@@ -165,7 +165,7 @@
           <div class="col s12 m6 l4">
             <div class="card cards-3">
               <div class="card-image">
-                <img src="images/my_class_my_strength.jpg">
+                <img data-src="images/my_class_my_strength.jpg">
               </div>
               <div class="card-content">
                 <p>Programme for students to create an interactive environment with their classmates and get to know the Strength
@@ -179,7 +179,7 @@
           <div class="col s12 m6 l4">
             <div class="card cards-3">
               <div class="card-image">
-                <img src="images/clouds_cricket.jpg">
+                <img data-src="images/clouds_cricket.jpg">
               </div>
               <div class="card-content">
                 <p>The exciting inter branch cricket tournament of students and faculties of computer Science and Engineering
@@ -193,7 +193,7 @@
           <div class="col s12 m6 l4">
             <div class="card cards-3">
               <div class="card-image">
-                <img src="images/arpan.jpg">
+                <img data-src="images/arpan.jpg">
               </div>
               <div class="card-content">
                 <p>Arpan, An orphan help programme organized by the clouds members to help and support orphans around Mangalore.</p>
@@ -203,7 +203,7 @@
           <div class="col s12 m6 l4">
             <div class="card cards-3">
               <div class="card-image">
-                <img src="images/technical_events.jpg">
+                <img data-src="images/technical_events.jpg">
               </div>
               <div class="card-content">
                 <p>A to Z technical events to challenge and showcase your skills to win exciting prices on a number events and
@@ -217,7 +217,7 @@
           <div class="col s12 m6 l4">
             <div class="card cards-3">
               <div class="card-image">
-                <img src="images/clouds_fest.jpg">
+                <img data-src="images/clouds_fest.jpg">
               </div>
               <div class="card-content">
                 <p>The cultural extraveganza of arts and colours to fullfil the inaugrual ceromoney of clouds and welcoming
@@ -230,7 +230,7 @@
           <div class="col s12 m6 l4">
             <div class="card cards-3">
               <div class="card-image">
-                <img src="images/farewell.jpg">
+                <img data-src="images/farewell.jpg">
               </div>
               <div class="card-content">
                 <p>A wonderfull thanks giving ceremoney for the outgoing students for their valuable contributions and love
@@ -263,6 +263,7 @@
         <div class="row pad10" id="results">
           <div class="row">
 
+            <!-- add results cards here -->
             <% winners.forEach(function(winner){ %>
               <div class="col s12 m6 l4"><!-- example card -->
               <div class="card tab-shadow center pad10bot">
@@ -306,7 +307,6 @@
             </div><!-- card ends here -->
             <% }) %>
 
-
           </div>
         </div>
         <div class="row pad10" id="scoreboard">
@@ -315,38 +315,30 @@
 
         <!-- events sub tab contents -->
         <div id="allevents" class="row pad10">
-          <div class="col s12 m6 l4">
-            <div class="card card1 hoverable">
-              <div class="card-content white-text">
-                <span class="card-title pad70top">Counter Strike</span>
-                <p>4 vs 4 inter branch counter strike tournament.</p>
-              </div>
-            </div>
-          </div>
 
           <div class="col s12 m6 l4">
-            <div class="card card2 hoverable">
-              <div class="card-content white-text">
-                <span class="card-title pad70top">Hackathon</span>
-                <p>24 hour android hackathon on Virtual reality.</p>
+            <a href="./event_details.html">
+              <div class="card card1 hoverable">
+                <div class="card-content white-text">
+                  <span class="card-title pad70top"><b>Counter Strike</b></span>
+                  <p class="valign-wrapper"><i class="tiny material-icons">access_time
+                        </i>&nbsp;25 August 12:00 pm</p>
+                  <p class="valign-wrapper"><i class="tiny material-icons">location_on
+                          </i>&nbsp;1st floor seminar hall</p>
+                </div>
               </div>
-            </div>
-          </div>
+            </a>
 
-          <div class="col s12 m6 l4">
-            <div class="card card3 hoverable">
-              <div class="card-content white-text">
-                <span class="card-title pad70top">Foodathon</span>
-                <p>Hounouring foodies in the right way with food.</p>
-              </div>
-            </div>
           </div>
 
           <div class="col s12 m6 l4">
             <div class="card card4 hoverable">
               <div class="card-content white-text">
-                <span class="card-title pad70top">Code Gladiators</span>
-                <p>Immerse into full round of code wars on python.</p>
+                <span class="card-title pad70top"><b>Code Gladiators</b></span>
+                <p class="valign-wrapper"><i class="tiny material-icons">access_time
+                      </i>&nbsp;25 August 12:00 pm</p>
+                <p class="valign-wrapper"><i class="tiny material-icons">location_on
+                        </i>&nbsp;1st floor seminar hall</p>
               </div>
             </div>
           </div>
@@ -354,17 +346,11 @@
           <div class="col s12 m6 l4">
             <div class="card card5 hoverable">
               <div class="card-content white-text">
-                <span class="card-title pad70top">Treassure hunt</span>
-                <p>4x inter branch treasure hunt competition.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <div class="card card6 hoverable">
-              <div class="card-content white-text">
-                <span class="card-title pad70top">Tug of war</span>
-                <p>8 vs 8 inter branch Tug of war competition.</p>
+                <span class="card-title pad70top"><b>Treasure Hunt</b></span>
+                <p class="valign-wrapper"><i class="tiny material-icons">access_time
+                      </i>&nbsp;25 August 12:00 pm</p>
+                <p class="valign-wrapper"><i class="tiny material-icons">location_on
+                        </i>&nbsp;1st floor seminar hall</p>
               </div>
             </div>
           </div>
@@ -404,7 +390,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 cyan size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/sudheer_shetty.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/sudheer_shetty.jpg" class="propic circle mar5top  " />
                 </div>
                 <span class="white-text name">
                                  Sudheer Shetty
@@ -416,7 +402,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 cyan size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/shailesh.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/shailesh.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                  Shailesh Shetty S
@@ -428,7 +414,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 cyan size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/shishir_shetty.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/shishir_shetty.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                  Shishir Shetty
@@ -440,7 +426,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 cyan size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/supravi_rai.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/supravi_rai.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                  Supravi Rai
@@ -453,7 +439,7 @@
             <div class="col s12 m6 l3 pad10 pad5top">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/monisha_tharkar.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/monisha_tharkar.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                    Monisha Tarkar
@@ -474,7 +460,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/Cultural/deepali.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/Cultural/deepali.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                  Deepali S
@@ -486,7 +472,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/Cultural/athulya_chandrashekhar.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/Cultural/athulya_chandrashekhar.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                   Athulya Chandrasekar
@@ -498,7 +484,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/Cultural/sefali.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/Cultural/sefali.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                  Shefali BS
@@ -512,7 +498,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/Cultural/shreya_gudigar.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/Cultural/shreya_gudigar.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                    Shreya D G
@@ -525,7 +511,7 @@
             <div class="col s12 m6 l3 pad10 pad5top">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/Cultural/shreyas_kammath.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/Cultural/shreyas_kammath.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                   Shreyas S Kamath
@@ -546,7 +532,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/sports/vidhyabhushan_vk.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/sports/vidhyabhushan_vk.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                       Vidyabhushan v k
@@ -558,7 +544,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/sports/srilaxmi_v_shetty.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/sports/srilaxmi_v_shetty.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                      Srilaxmi V Shetty
@@ -572,7 +558,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/sports/krithesh.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/sports/krithesh.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                       Krithesh Bhandary
@@ -586,7 +572,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/sports/charan.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/sports/charan.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                       Charan Raj
@@ -600,7 +586,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/sports/manju.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/sports/manju.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                       Manjunath S Koralli
@@ -614,7 +600,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/sports/souravi.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/sports/souravi.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                         Souravi A.P
@@ -635,7 +621,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/technical/pavi3_b_shetty.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/technical/pavi3_b_shetty.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                           Pavithree B Shetty
@@ -649,7 +635,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/technical/sumana_kottary.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/technical/sumana_kottary.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                             Sumana Kottary
@@ -662,7 +648,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/technical/jahaz.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/technical/jahaz.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                             Jehad Mohammed
@@ -676,7 +662,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/technical/riya_batra.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/technical/riya_batra.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                             Riya Batra
@@ -698,7 +684,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/placement/prithvi_shree.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/placement/prithvi_shree.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                 Prithvi Shree
@@ -711,7 +697,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/placement/chaithrika_s.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/placement/chaithrika_s.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                             Chaithrika S
@@ -724,7 +710,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/placement/suhas_kandiga.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/placement/suhas_kandiga.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                       Suhas Kandiga
@@ -737,7 +723,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/placement/rajitha_raji.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/placement/rajitha_raji.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                         Rajitha Ramakrishna
@@ -759,7 +745,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/Journal/namana_padiyar.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/Journal/namana_padiyar.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                           Namana Padiyar
@@ -772,7 +758,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/Journal/anusha_pj.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/Journal/anusha_pj.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                             Anusha PJ
@@ -794,7 +780,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/events/megha_m_rai.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/events/megha_m_rai.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                               Meghna M Rai
@@ -807,7 +793,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/events/renida_dsouza.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/events/renida_dsouza.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                 Renida D'Souza
@@ -820,7 +806,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/events/bhavishya_n_kotian.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/events/bhavishya_n_kotian.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                             Bhavishya N Kotian
@@ -834,7 +820,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/events/abhijnya.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/events/abhijnya.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                               Abhijna hegde
@@ -847,7 +833,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/events/gautham_pai.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/events/gautham_pai.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                               Gautham Pai
@@ -861,7 +847,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/events/priyanka.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/events/priyanka.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                 Priyanka Shetty
@@ -875,7 +861,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/events/navya.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/events/navya.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                   Navya Prabhu
@@ -889,7 +875,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/events/raksha_bhandary.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/events/raksha_bhandary.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                     Raksha R Bhandary
@@ -911,7 +897,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/Decoration/ashwitha_jathan.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/Decoration/ashwitha_jathan.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                           Ashwitha Jathan
@@ -925,7 +911,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/Decoration/himika_shetty.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/Decoration/himika_shetty.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                             Himika Shetty
@@ -939,7 +925,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/Decoration/Gagana_t_naik.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/Decoration/Gagana_t_naik.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                               Gagana T Naik
@@ -953,7 +939,7 @@
             <div class="col s12 m6 l3 pad10">
               <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
                 <div class="row center">
-                  <img src="images/members/Decoration/akshatha_a.jpg" class="propic circle mar5top" />
+                  <img data-src="images/members/Decoration/akshatha_a.jpg" class="propic circle mar5top " />
                 </div>
                 <span class="white-text name">
                                                 Akshatha A
@@ -963,6 +949,123 @@
 
               </div>
             </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img data-src="images/members/Decoration/ashish.jpg" class="propic circle mar5top " />
+                </div>
+                <span class="white-text name">
+                                                  Ashish Shetty
+                                                                  </span><br/><span class="white-text caption pad5">
+                                                                      Decoration Co-ordinator
+                                                                  </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img data-src="images/members/Decoration/sherlin.jpg" class="propic circle mar5top " />
+                </div>
+                <span class="white-text name">
+                        Sherlin Niel Pinto
+                                                                    </span><br/><span class="white-text caption pad5">
+                                                                        Decoration Co-ordinator
+                                                                    </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img data-src="images/members/Decoration/krishna.jpg" class="propic circle mar5top " />
+                </div>
+                <span class="white-text name">
+                          Shree Krishna
+                                                                      </span><br/><span class="white-text caption pad5">
+                                                                          Decoration Co-ordinator
+                                                                      </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img data-src="images/members/Decoration/satvik.jpg" class="propic circle mar5top " />
+                </div>
+                <span class="white-text name">
+                            Sathvik
+                                                                        </span><br/><span class="white-text caption pad5">
+                                                                            Decoration Co-ordinator
+                                                                        </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img data-src="images/members/Decoration/shramith.jpg" class="propic circle mar5top " />
+                </div>
+                <span class="white-text name">
+                              Shramith
+                                                                          </span><br/><span class="white-text caption pad5">
+                                                                              Decoration Co-ordinator
+                                                                          </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+                <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                  <div class="row center">
+                    <img data-src="images/members/Decoration/rachana.jpg" class="propic circle mar5top " />
+                  </div>
+                  <span class="white-text name">
+                                Rachana Alva
+                                                                            </span><br/><span class="white-text caption pad5">
+                                                                                Decoration Co-ordinator
+                                                                            </span>
+
+                </div>
+              </div>
+              <div class="col s12 m6 l3 pad10">
+                  <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                    <div class="row center">
+                      <img data-src="images/members/Decoration/meghna.jpg" class="propic circle mar5top " />
+                    </div>
+                    <span class="white-text name">
+                                  Meghna B M
+                                                                              </span><br/><span class="white-text caption pad5">
+                                                                                  Decoration Co-ordinator
+                                                                              </span>
+
+                  </div>
+                </div>
+                <div class="col s12 m6 l3 pad10">
+                    <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                      <div class="row center">
+                        <img data-src="images/members/Decoration/sameeksha.jpg" class="propic circle mar5top " />
+                      </div>
+                      <span class="white-text name">
+                                    Sameeksha K
+                                                                                </span><br/><span class="white-text caption pad5">
+                                                                                    Decoration Co-ordinator
+                                                                                </span>
+
+                    </div>
+                  </div>
+                  <div class="col s12 m6 l3 pad10">
+                      <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                        <div class="row center">
+                          <img data-src="images/members/Decoration/mayuri.jpg" class="propic circle mar5top " />
+                        </div>
+                        <span class="white-text name">
+                                      Mayuri
+                                                                                  </span><br/><span class="white-text caption pad5">
+                                                                                      Decoration Co-ordinator
+                                                                                  </span>
+
+                      </div>
+                    </div>
 
 
           </div>
@@ -981,113 +1084,180 @@
     <div class="hero"></div>
     <div class="container">
       <div class="cards cards-3">
-        <div class="row">
-          <div class="col s12">
-            <p class="title">
-              CLOUDS
-            </p>
+        <div class="col s12 tab-shadow center">
+          <ul id="about_tabs" class="tabs">
+            <li class="tab col s3"><a id="events_tab" class="active" href="#about_clouds">clouds</a></li>
+            <li class="tab col s3"><a href="#webmasters">Developers</a></li>
+            <li class="tab col s3"><a href="#sponsors">Sponsors</a></li>
+          </ul>
+        </div>
+
+        <div id="about_clouds" class="row pad0 margin0">
+          <div class="row">
+            <div class="col s12">
+              <p class="title">
+                CLOUDS
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="container">
+
+                <header>
+                  <p>
+                    <b>Computer Legends Of Unified Department @ Sahyadri , </b> The Department of Computer Science &amp;
+                    Engineering started in the year 2007 with an intake of 60 and is a fast growing discipline and is full
+                    of rigorous practical analysis. The department is planning to grow in supersonic speed as far as Technical
+                    expertise; Faculty Strength, Modern Teaching Aids, Browsing facilities etc. are concerned. The department
+                    also interacts with the industries on a regular basis to develop the capabilities in the latest technologies.
+                    The department has setup the state of the art laboratories with computing facilities and peripheral devices.
+                    <br /> The department has an intake of 180 students in UG (B. E.) category. It also offers a PG Course
+                    i.e. M. Tech. in Computer Science &amp; Engineering with an intake of 24. With highly talented faculty,
+                    the department boasts of a unique mode of learning, one that uses advanced aids for teaching. Our faculty
+                    and students are actively involved in intense interactions that help our students gain practical exposure,
+                    much before they are part of the IT industry. Simulated projects and many times, live projects, give
+                    our students the thrill of livewire action of the software industry. And beyond the technology side of
+                    Computer Science, our curriculum focuses on the behavioral aspects and management perspectives of the
+                    Information Technology.
+                  </p>
+                </header>
+
+                <ul class="timeline">
+                  <!-- Item 1 -->
+                  <li>
+                    <div class="direction-r">
+                      <div class="flag-wrapper">
+                        <span class="hexa"></span>
+                        <span class="flag">Clouds'16</span>
+                        <span class="time-wrapper"><span class="time">Sep 2016</span></span>
+                      </div>
+                      <div class="desc">CLOUDS, the student association for the academic year 2016-17 was inaugurated by Mr. Karthik Bhat,
+                        Software Engineer at the UniCourt Inc. in the presence of Professor Sudheer Shetty, Head of the Department
+                        of Computer Science and Engineering. Prof. Sudheer Shetty welcomed the gathering and delivered the
+                        inaugural address.
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- Item 2 -->
+                  <li>
+                    <div class="direction-l">
+                      <div class="flag-wrapper">
+                        <span class="hexa"></span>
+                        <span class="flag">Clouds'15</span>
+                        <span class="time-wrapper"><span class="time">Sep 2015</span></span>
+                      </div>
+                      <div class="desc">CLOUDS (Computer Legends Of the Unified Department @ Sahyadri), the student association for the academic
+                        year 2015-16 was inaugurated by Professor Sudheer Shetty, Head of the Department of Computer Science
+                        and Engineering. In his address he laid importance on health and about how attitude affects the success
+                        of a student. This was then followed by Cultural activities by the students.</div>
+                    </div>
+                  </li>
+
+                  <!-- Item 3 -->
+                  <li>
+                    <div class="direction-r">
+                      <div class="flag-wrapper">
+                        <span class="hexa"></span>
+                        <span class="flag">Clouds'14</span>
+                        <span class="time-wrapper"><span class="time">Sep 2014</span></span>
+                      </div>
+                      <div class="desc">CLOUDS 2014-15 was inaugurated by Dr. Antony P. J., Director, PG Studies, KVG College of Engineering,
+                        Sullia. Mr. Sudheer Shetty, HoD and the President of CLOUDS, welcomed the Chief Guest, the staff
+                        and the second year students of the department.</div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="direction-l">
+                      <div class="flag-wrapper">
+                        <span class="hexa"></span>
+                        <span class="flag">TOXICS'13</span></span>
+                        <span class="time-wrapper"><span class="time">2013 - 2014</span></span>
+                      </div>
+                      <div class="desc">TOXICS - Technically Outstanding Experts Of Information And Computer Science And Engineering Various
+                        activities for the academic year 2013-14 of TOXICS-Technically Outstanding experts of Information
+                        and Computer Science and Engineering - a Student Association of the Department of Computer Science
+                        Engineering &amp; Information Science &amp; Engineering was inaugurated by Mr. Sudheer Pakkala, Software
+                        Test Manager, Timken Engineering Research India Pvt. Ltd., Bangalore.</div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="direction-r">
+                      <div class="flag-wrapper">
+                        <span class="hexa"></span>
+                        <span class="flag">TOXICS'12</span>
+                        <span class="time-wrapper"><span class="time">2012 - 2013</span></span>
+                      </div>
+                      <div class="desc">Various activities for the academic year 2012-13 of TOXICS-Technically Outstanding experts of Information
+                        and Computer Science and Engineering – a students’ association of CSE &amp; ISE was inaugurated by
+                        Dr. U. B. Pavanaja, Ex-scientist, BARC, Mumbai.</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- set ? -->
+        </div>
+        <div class="row" id="webmasters">
+          <div class="row">
+            <div class="col s12">
+              <p class="title">
+                Developers
+              </p>
+            </div>
+          </div>
+          <div class="row center pad10">
+            <div class="col l2 hide-on-med-and-down"></div>
+            <div class="col s12 m6 l4 pad10">
+              <div class="cards cards-3 cyan  pad10 propic-card">
+                <div class="row center">
+                  <img data-src="images/haxzie.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                             Musthaq Ahamad
+                                           </span><br/>
+
+                <ul class="icons">
+                  <li><a href="http://facebook.com/musthu.pvr"><img src="images/facebook-logo.svg" class="icon"/></a></li>
+                  <li><a href="http://github.com/haxzie"><img src="images/github-logo.svg" class="icon"/></a></li>
+                  <li><a href="https://api.whatsapp.com/send?phone=9539518599"><img src="images/whatsapp.svg" class="icon"/></a></li>
+                  <li><a href="http://instagram.com/haxzie"><img src="images/insta-logo.svg" class="icon"/></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col s12 m6 l4 pad10">
+              <div class="cards cards-3 cyan  pad10 propic-card">
+                <div class="row center">
+                  <img data-src="images/chamman.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                               Chamman K
+                                             </span><br/>
+                <ul class="icons">
+                  <li><a href="https://www.facebook.com/chamansullia"><img src="images/facebook-logo.svg" class="icon"/></a></li>
+                  <li><a href="https://github.com/chaman-k"><img src="images/github-logo.svg" class="icon"/></a></li>
+                  <li><a href="https://api.whatsapp.com/send?phone=8197496155"><img src="images/whatsapp.svg" class="icon"/></a></li>
+                  <li><a href="https://www.instagram.com/chaman.123/"><img src="images/insta-logo.svg" class="icon"/></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col l2 hide-on-med-and-down"></div>
           </div>
         </div>
-        <div class="row">
-          <div class="col s12">
-            <div class="container">
-
-              <header>
-                <p>
-                  <b>Computer Legends Of Unified Department @ Sahyadri , </b> The Department of Computer Science &amp; Engineering
-                  started in the year 2007 with an intake of 60 and is a fast growing discipline and is full of rigorous
-                  practical analysis. The department is planning to grow in supersonic speed as far as Technical expertise;
-                  Faculty Strength, Modern Teaching Aids, Browsing facilities etc. are concerned. The department also interacts
-                  with the industries on a regular basis to develop the capabilities in the latest technologies. The department
-                  has setup the state of the art laboratories with computing facilities and peripheral devices.
-                  <br /> The department has an intake of 180 students in UG (B. E.) category. It also offers a PG Course
-                  i.e. M. Tech. in Computer Science &amp; Engineering with an intake of 24. With highly talented faculty,
-                  the department boasts of a unique mode of learning, one that uses advanced aids for teaching. Our faculty
-                  and students are actively involved in intense interactions that help our students gain practical exposure,
-                  much before they are part of the IT industry. Simulated projects and many times, live projects, give our
-                  students the thrill of livewire action of the software industry. And beyond the technology side of Computer
-                  Science, our curriculum focuses on the behavioral aspects and management perspectives of the Information
-                  Technology.
-                </p>
-              </header>
-
-              <ul class="timeline">
-                <!-- Item 1 -->
-                <li>
-                  <div class="direction-r">
-                    <div class="flag-wrapper">
-                      <span class="hexa"></span>
-                      <span class="flag">Clouds'16</span>
-                      <span class="time-wrapper"><span class="time">Sep 2016</span></span>
-                    </div>
-                    <div class="desc">CLOUDS, the student association for the academic year 2016-17 was inaugurated by Mr. Karthik Bhat, Software
-                      Engineer at the UniCourt Inc. in the presence of Professor Sudheer Shetty, Head of the Department of
-                      Computer Science and Engineering. Prof. Sudheer Shetty welcomed the gathering and delivered the inaugural
-                      address.
-                    </div>
-                  </div>
-                </li>
-
-                <!-- Item 2 -->
-                <li>
-                  <div class="direction-l">
-                    <div class="flag-wrapper">
-                      <span class="hexa"></span>
-                      <span class="flag">Clouds'15</span>
-                      <span class="time-wrapper"><span class="time">Sep 2015</span></span>
-                    </div>
-                    <div class="desc">CLOUDS (Computer Legends Of the Unified Department @ Sahyadri), the student association for the academic
-                      year 2015-16 was inaugurated by Professor Sudheer Shetty, Head of the Department of Computer Science
-                      and Engineering. In his address he laid importance on health and about how attitude affects the success
-                      of a student. This was then followed by Cultural activities by the students.</div>
-                  </div>
-                </li>
-
-                <!-- Item 3 -->
-                <li>
-                  <div class="direction-r">
-                    <div class="flag-wrapper">
-                      <span class="hexa"></span>
-                      <span class="flag">Clouds'14</span>
-                      <span class="time-wrapper"><span class="time">Sep 2014</span></span>
-                    </div>
-                    <div class="desc">CLOUDS 2014-15 was inaugurated by Dr. Antony P. J., Director, PG Studies, KVG College of Engineering,
-                      Sullia. Mr. Sudheer Shetty, HoD and the President of CLOUDS, welcomed the Chief Guest, the staff and
-                      the second year students of the department.</div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="direction-l">
-                    <div class="flag-wrapper">
-                      <span class="hexa"></span>
-                      <span class="flag">TOXICS'13</span></span>
-                      <span class="time-wrapper"><span class="time">2013 - 2014</span></span>
-                    </div>
-                    <div class="desc">TOXICS - Technically Outstanding Experts Of Information And Computer Science And Engineering Various
-                      activities for the academic year 2013-14 of TOXICS-Technically Outstanding experts of Information and
-                      Computer Science and Engineering - a Student Association of the Department of Computer Science Engineering
-                      &amp; Information Science &amp; Engineering was inaugurated by Mr. Sudheer Pakkala, Software Test Manager,
-                      Timken Engineering Research India Pvt. Ltd., Bangalore.</div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="direction-r">
-                    <div class="flag-wrapper">
-                      <span class="hexa"></span>
-                      <span class="flag">TOXICS'12</span>
-                      <span class="time-wrapper"><span class="time">2012 - 2013</span></span>
-                    </div>
-                    <div class="desc">Various activities for the academic year 2012-13 of TOXICS-Technically Outstanding experts of Information
-                      and Computer Science and Engineering – a students’ association of CSE &amp; ISE was inaugurated by
-                      Dr. U. B. Pavanaja, Ex-scientist, BARC, Mumbai.</div>
-                  </div>
-                </li>
-              </ul>
+        <div class="row" id="sponsors">
+          <div class="row">
+            <div class="col s12">
+              <p class="title">
+                Sponsors
+              </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -1121,17 +1291,23 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/lazyload.min.js"></script>
+
   <script>
     $(document).ready(function () {
+      var myLazyLoad = new LazyLoad();
       $(".button-collapse").sideNav();
       $('#main_tabs').tabs({
         onShow: function (tab) {
-          switch(tab[0].id){
+          switch (tab[0].id) {
             case 'events':
               $('#event_tabs').tabs();
               break;
             case 'members':
               $('#member_tabs').tabs();
+              break;
+            case 'about':
+              $('#about_tabs').tabs();
               break;
           }
         }
@@ -1142,6 +1318,10 @@
           console.log('now on tab ' + content.hash);
         }
       });
+
+
+
+
 
     });
   </script>

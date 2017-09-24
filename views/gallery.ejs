@@ -28,7 +28,7 @@
   <nav class="z-depth-0">
     <div class="nav-wrapper light-blue z-depth-0">
       <div class="container">
-        <a href="/index" class="brand-logo"><i class="material-icons">cloud</i>clouds</a>
+        <a href="./index.html" class="brand-logo"><i class="material-icons">cloud</i>clouds</a>
         <ul class="right hide-on-med-and-down">
           <li><a href="sass.html"><i class="material-icons">search</i></a></li>
           <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
@@ -51,101 +51,38 @@
           <!-- deploy the cards inside this -->
 
           <!-- caaaaardssssssss -->
-
+          <% albums.forEach(function(album){ %>
           <div class="gallery_card cards-3 pad0">
             <div class="row pad0 margin0">
               <!-- card image -->
-              <div class="col s12 m12 l12"><img src="images/gallery/album_cover/sample.jpg" class="gcard_image" /></div>
+              <div class="col s12 m12 l12"><img data-src="images/gallery/album_cover/sample.jpg" class="gcard_image" /></div>
               <div class="col s12 m12 l12 gcard_contents">
                 <div class="row pad0 margin0">
                   <div class="col s12 m8 l8">
                     <p class="gcard_title">
                       <!-- card title -->
-                      Clouds Inaugration
+                      <%= album.albumName %>
                     </p>
                     <!-- card caption -->
-                    <p class="gcard_caption">Some lorem ipsum shit</p>
+                    <p class="gcard_caption"> <%= album.description %> </p>
                   </div>
-                  <div class="col s12 m4 l4 pad10 center "> <a class="waves-effect waves-light btn mar10" href="/album_view"><i class="material-icons right">camera_alt</i>View Album</a>
+                  <div class="col s12 m4 l4 pad10 center "> <a class="waves-effect waves-light btn mar10" href="./album_view.html"><i class="material-icons right">camera_alt</i>View Album</a>
                     </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <% }) %>
 
-          <div class="gallery_card cards-3 pad0">
-            <div class="row pad0 margin0">
-              <!-- card image -->
-              <div class="col s12 m12 l12"><img src="images/gallery/album_cover/sample.jpg" class="gcard_image" /></div>
-              <div class="col s12 m12 l12 gcard_contents">
-                <div class="row pad0 margin0">
-                  <div class="col s12 m8 l8">
-                    <p class="gcard_title">
-                      <!-- card title -->
-                      Clouds Inaugration
-                    </p>
-                    <!-- card caption -->
-                    <p class="gcard_caption">Some lorem ipsum shit</p>
-                  </div>
-                  <div class="col s12 m4 l4 pad10 center "> <button class="btn waves-effect waves-light mar10" type="submit" name="action">View Album
-                          <i class="material-icons right">camera_alt</i>
-                        </button></div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="gallery_card cards-3 pad0">
-            <div class="row pad0 margin0">
-              <!-- card image -->
-              <div class="col s12 m12 l12"><img src="images/gallery/album_cover/sample.jpg" class="gcard_image" /></div>
-              <div class="col s12 m12 l12 gcard_contents">
-                <div class="row pad0 margin0">
-                  <div class="col s12 m8 l8">
-                    <p class="gcard_title">
-                      <!-- card title -->
-                      Clouds Inaugration
-                    </p>
-                    <!-- card caption -->
-                    <p class="gcard_caption">Some lorem ipsum shit</p>
-                  </div>
-                  <div class="col s12 m4 l4 pad10 center "> <button class="btn waves-effect waves-light mar10" type="submit" name="action">View Album
-                            <i class="material-icons right">camera_alt</i>
-                          </button></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery_card cards-3 pad0">
-            <div class="row pad0 margin0">
-              <!-- card image -->
-              <div class="col s12 m12 l12"><img src="images/gallery/album_cover/sample.jpg" class="gcard_image" /></div>
-              <div class="col s12 m12 l12 gcard_contents">
-                <div class="row pad0 margin0">
-                  <div class="col s12 m8 l8">
-                    <p class="gcard_title">
-                      <!-- card title -->
-                      Clouds Inaugration
-                    </p>
-                    <!-- card caption -->
-                    <p class="gcard_caption">Some lorem ipsum shit</p>
-                  </div>
-                  <div class="col s12 m4 l4 pad10 center "> <button class="btn waves-effect waves-light mar10" type="submit" name="action">View Album
-                              <i class="material-icons right">camera_alt</i>
-                            </button></div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="col m1 l2 hide-on-small-only"></div>
         <!-- leave this as is, jzt to add padding on right -->
       </div>
     </div>
   </div>
-  <div class="fixed-action-btn" style="bottom:40px; right: 25px;">
+  <div class="fixed-action-btn" style="bottom:30px; right: 25px;">
     <a class="btn-floating btn-large waves-effect waves-light teal tooltipped" data-position="left" data-delay="50" data-tooltip="Upload Image" href="./image_upload.html"><i class="material-icons">file_upload</i></a>
   </div>
 
@@ -178,6 +115,12 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/lazyload.min.js"></script>
+  <script>
+     $(document).ready(function(){
+      var myLazyLoad = new LazyLoad();
+  });
+  </script>
 </body>
 
 </html>
