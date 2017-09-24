@@ -57,6 +57,9 @@ app.get('/gallery', function(req, res, next){
   return res.render('gallery');
 });
 
+app.get('/album_view', function(req, res, next){
+  return res.render('album_view');
+});
 
 app.post('/winners', function(req, res){
 //   fs.writeFile('mynewfile3.txt', req.body.data, function (err) {
