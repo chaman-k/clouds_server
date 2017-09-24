@@ -23,7 +23,7 @@
   <nav>
     <div class="nav-wrapper light-blue">
       <div class="container">
-        <a href="/gallery" class="left back_title"><i class="material-icons">arrow_back</i></a>
+        <a href=" /gallery" class="left back_title"><i class="material-icons">arrow_back</i></a>
         <ul class="right">
           <li><a href="mobile.html"><i class="material-icons">share</i></a></li>
         </ul>
@@ -45,12 +45,11 @@
 
               <div class="row">
                 <section>
-                  <img data-src="images/arpan.jpg" />
-                  <img data-src="images/home_card_1.jpg" />
-                  <img data-src="images/farewell.jpg" />
-                  <img data-src="images/technical_events.jpg" />
-                  <img data-src="images/sahyadri.jpg" />
-                  <img data-src="images/clouds_fest.jpg" />
+                  <% images.forEach(function(image){ %>
+                    <% if(image.display==true){%>
+                    <img data-src= "<%= image.link %>" />
+                    <%}%>
+                  <%})%>
                 </section>
 
 

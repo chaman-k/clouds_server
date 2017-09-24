@@ -62,7 +62,7 @@ app.get('/gallery', function(req, res, next){
       res.render('gallery');
     }
     else if(docs){
-      res.render('gallery', {albums: docs});
+      return res.render('gallery', {albums: docs});
     }
     else res,render('gallery');
   });
@@ -70,6 +70,24 @@ app.get('/gallery', function(req, res, next){
 });
 
 app.get('/album_view', function(req, res, next){
+  console.log(req.query.id);
+  // var Image = new image({
+  //   albumName: "CLOUDS Inaugration",
+  //   link: "images/technical_events.jpg",
+  //   display: true
+  // });
+  // Image.save(function (err){
+  //     if (err) console.log("error ");
+  //     else console.log("event inserted into db");
+  // });
+  image.find({albumName: req.query.id }, function(err, docs){
+    if(err){
+      return res.render('album_view');
+    }
+    else if(docs){
+      return res.render('album_view',{images: docs});
+    }
+  });
   // var Album = new album({
   //     albumName: "CLOUDS Farewell",
   //     cover: "images/gallery/album_cover/sample.jpg",
@@ -77,11 +95,16 @@ app.get('/album_view', function(req, res, next){
   //
   //
   // });
-  // Album.save(function (err){
+  // var Image = new image({
+  //   albumName: "CLOUDS Inaugration",
+  //   link: "images/farewell.jpg",
+  //   display: true
+  // });
+  // Image.save(function (err){
   //     if (err) console.log("error ");
   //     else console.log("event inserted into db");
   // });
-  return res.render('album_view');
+
 });
 
 app.post('/winners', function(req, res){
