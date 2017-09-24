@@ -1,121 +1,1150 @@
 <!DOCTYPE html>
-<%- include('head') %>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/styles.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/card_images.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:site_name" content="Clouds Sahyadri">
+  <meta property="og:title" content="Clouds Sahyadri" />
+  <meta property="og:description" content="Computer Legends of Unified Department of Sahyadri" />
+  <meta property="og:image" itemprop="image" content="images/couds_image.png">
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="1440432930" />
+
+  <style>
+    .card1 {
+      background-color: #08AEEA;
+      background-image: url(images/events/event_1_cs.png), linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover;
+      /*, linear-gradient(0deg, #08AEEA 0%, #2AF598 100%)*/
+    }
+
+    .card2 {
+      background-color: #FEE140;
+      background-image: url(images/events/event_2_hackathon.png), linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover;
+      /*, linear-gradient(0deg, #08AEEA 0%, #2AF598 100%)*/
+    }
+
+    .card3 {
+      background-color: #FA8BFF;
+      background-image: url(images/events/event_3_foodathon.png), linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover;
+      /*, linear-gradient(0deg, #08AEEA 0%, #2AF598 100%)*/
+    }
+
+    .card4 {
+      background-color: #4158D0;
+      background-image: url(images/events/event_4_coding.png), linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover;
+      /*, linear-gradient(0deg, #08AEEA 0%, #2AF598 100%)*/
+    }
+
+    .card5 {
+      background-color: #FF9A8B;
+      background-image: url(images/events/event_5_treassure.png), linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover;
+      /*, linear-gradient(0deg, #08AEEA 0%, #2AF598 100%)*/
+    }
+
+    .card6 {
+      background-color: #0093E9;
+      background-image: url(images/events/event_6_tug.png), linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover;
+      /*, linear-gradient(0deg, #08AEEA 0%, #2AF598 100%)*/
+    }
+
+    .card7 {
+      background-color: #08AEEA;
+      background-image: url(images/events/event_1_cs.png), linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+      background-repeat: no-repeat, no-repeat;
+      background-size: cover;
+      /*, linear-gradient(0deg, #08AEEA 0%, #2AF598 100%)*/
+    }
+  </style>
+</head>
 
 
-   <body>
-     <!--Import jQuery before materialize.js-->
-     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <script type="text/javascript" src="js/materialize.min.js"></script>
-     <script>
-        $(document).ready(function(){
-          $(".button-collapse").sideNav();
-          $("ul.tabs").tabs({ onShow: function(tab) { $('ul.tabs').tabs(); } });
-
-        });
-        </script>
+<body>
 
 
-        <%- include('navbar') %>
 
 
-        <%- include('home') %>
 
-      <!-- events tab contents -->
-     <div id="events" class="col s12">
-       <div class="hero">
-         <!-- <img src="images/sahyadri.jpg" /> -->
-       </div>
-       <div class="container">
-         <div class="cards cards-3">
-           <div class="col s12 tab-shadow">
-              <ul class="tabs">
-                <li class="tab col s3"><a id="events_tab"class="active" href="#allevents">All Events</a></li>
-                <li class="tab col s3"><a href="#results">Results</a></li>
-                <li class="tab col s3"><a href="#scoreboard">ScoreBoard</a></li>
+  <nav class="nav-extended">
+    <div class="nav-wrapper light-blue">
+      <div class="nav-container">
+        <a href="./index.html" class="brand-logo"><i class="material-icons">cloud</i>clouds</a>
+        <!-- <a href="#" class="brand-logo valign-wrapper">&nbsp;<img src="images/clouds_logo.svg" class="responsive-img logo mar5top" width="100px" height="30px"/></a> -->
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="helpline.html">HelpLine</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="collapsible.html">Login</a></li>
+        </ul>
+
+      </div>
+
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="helpline.html">HelpLine</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="collapsible.html">Login</a></li>
+      </ul>
+    </div>
+    <div class="nav-content light-blue">
+      <ul id="main_tabs" class="tabs tabs-transparent center">
+        <li class="tab"><a class="active" href="#home">Home</a></li>
+        <li class="tab"><a id="events_trigger" href="#events">Events</a></li>
+        <li class="tab"><a href="#members">Members</a></li>
+        <li class="tab"><a href="#about">About</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+
+  <div id="home" class="col s12">
+    <div class="hero">
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <div class="cards cards-3 center">
+            <p class="title">THE LEGENDS OF SAHYADRI</p>
+            <div class="row pad10 mar5top">
+              <div class="col s12 m12 l4">
+                <div class="card-panel homecard1 valign-wrapper hoverable">
+                  <span class="white-text cardtext grow">LEARN</span>
+                </div>
+              </div>
+              <div class="col s12 m12 l4">
+                <div class="card-panel homecard2 valign-wrapper hoverable">
+                  <span class="white-text cardtext grow ">LEAD</span>
+                </div>
+              </div>
+              <div class="col s12 m12 l4">
+                <div class="card-panel homecard3 valign-wrapper hoverable">
+                  <span class="white-text cardtext grow ">INSPIRE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pad5">
+          <div class="col s12 m12 l12">
+            <div class="card-panel videocard cards-3 valign-wrapper margin0">
+              <div class="video-card-data center">
+                <p class="white-text cardhead">
+                  Clouds Anthem 2017
+                </p>
+                <a href="http://www.youtube.com/embed/RbbQl2sU-ag?autoplay=1" rel="lightframe"><img src="images/play_icon.svg" class="grow centered play-button" /></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="title">ACTIVITIES</p>
+        <div class="row pad5">
+
+          <div class="col s12 m6 l4">
+            <div class="card cards-3">
+              <div class="card-image">
+                <img src="images/my_class_my_strength.jpg">
+              </div>
+              <div class="card-content">
+                <p>Programme for students to create an interactive environment with their classmates and get to know the Strength
+                  of each and know better.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card cards-3">
+              <div class="card-image">
+                <img src="images/clouds_cricket.jpg">
+              </div>
+              <div class="card-content">
+                <p>The exciting inter branch cricket tournament of students and faculties of computer Science and Engineering
+                  Department.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card cards-3">
+              <div class="card-image">
+                <img src="images/arpan.jpg">
+              </div>
+              <div class="card-content">
+                <p>Arpan, An orphan help programme organized by the clouds members to help and support orphans around Mangalore.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card cards-3">
+              <div class="card-image">
+                <img src="images/technical_events.jpg">
+              </div>
+              <div class="card-content">
+                <p>A to Z technical events to challenge and showcase your skills to win exciting prices on a number events and
+                  activities.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card cards-3">
+              <div class="card-image">
+                <img src="images/clouds_fest.jpg">
+              </div>
+              <div class="card-content">
+                <p>The cultural extraveganza of arts and colours to fullfil the inaugrual ceromoney of clouds and welcoming
+                  new members to the dept.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card cards-3">
+              <div class="card-image">
+                <img src="images/farewell.jpg">
+              </div>
+              <div class="card-content">
+                <p>A wonderfull thanks giving ceremoney for the outgoing students for their valuable contributions and love
+                  for the sahyadrian family.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- events tab contents -->
+  <div id="events" class="col s12">
+    <div class="hero">
+      <!-- <img src="images/sahyadri.jpg" /> -->
+    </div>
+    <div class="container">
+      <div class="cards cards-3">
+        <div class="col s12 tab-shadow center">
+          <ul id="event_tabs" class="tabs">
+            <li class="tab col s3"><a id="events_tab" class="active" href="#allevents">All Events</a></li>
+            <li class="tab col s3"><a href="#results">Results</a></li>
+            <li class="tab col s3"><a href="#scoreboard">ScoreBoard</a></li>
+          </ul>
+        </div>
+
+        <!-- results tab contents-->
+        <div class="row pad10" id="results">
+          <div class="row">
+
+            <% winners.forEach(function(winner){ %>
+              <div class="col s12 m6 l4"><!-- example card -->
+              <div class="card tab-shadow center pad10bot">
+                <p class="result-title teal accent-3 pad10"> <%= winner.eventName %></p>
+                <div class="row pad10 margin0">
+                  <div class="col s2">
+                    1.
+                  </div>
+                  <div class="col s5">
+                    <%= winner.studentName1 %>
+                  </div>
+                  <div class="col s5">
+                    <%= winner.studentClass1 %>
+                  </div>
+                </div>
+                <hr/>
+                <div class="row pad10 margin0">
+                  <div class="col s2">
+                    2.
+                  </div>
+                  <div class="col s5">
+                    <%= winner.studentName2 %>
+                  </div>
+                  <div class="col s5">
+                    <%= winner.studentClass2 %>
+                  </div>
+                </div>
+                <hr/>
+                <div class="row pad10 margin0">
+                  <div class="col s2">
+                    3.
+                  </div>
+                  <div class="col s5">
+                    <%= winner.studentName3 %>
+                  </div>
+                  <div class="col s5">
+                    <%= winner.studentClass3 %>
+                  </div>
+                </div>
+              </div>
+            </div><!-- card ends here -->
+            <% }) %>
+
+
+          </div>
+        </div>
+        <div class="row pad10" id="scoreboard">
+
+        </div>
+
+        <!-- events sub tab contents -->
+        <div id="allevents" class="row pad10">
+          <div class="col s12 m6 l4">
+            <div class="card card1 hoverable">
+              <div class="card-content white-text">
+                <span class="card-title pad70top">Counter Strike</span>
+                <p>4 vs 4 inter branch counter strike tournament.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card card2 hoverable">
+              <div class="card-content white-text">
+                <span class="card-title pad70top">Hackathon</span>
+                <p>24 hour android hackathon on Virtual reality.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card card3 hoverable">
+              <div class="card-content white-text">
+                <span class="card-title pad70top">Foodathon</span>
+                <p>Hounouring foodies in the right way with food.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card card4 hoverable">
+              <div class="card-content white-text">
+                <span class="card-title pad70top">Code Gladiators</span>
+                <p>Immerse into full round of code wars on python.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card card5 hoverable">
+              <div class="card-content white-text">
+                <span class="card-title pad70top">Treassure hunt</span>
+                <p>4x inter branch treasure hunt competition.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card card6 hoverable">
+              <div class="card-content white-text">
+                <span class="card-title pad70top">Tug of war</span>
+                <p>8 vs 8 inter branch Tug of war competition.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- members tab contents -->
+  <div id="members" class="col s12">
+    <div class="hero">
+
+    </div>
+    <div class="container">
+      <div class="cards cards-3">
+        <div class="col s12 tab-shadow">
+          <ul id="member_tabs" class="tabs">
+            <li class="tab col s3"><a id="events_tab" class="active" href="#cordinators">Coordinators</a></li>
+            <li class="tab col s3"><a href="#cultural">Cultural</a></li>
+            <li class="tab col s3"><a href="#sports">Sports</a></li>
+            <li class="tab col s3"><a href="#technical">Technical</a></li>
+            <li class="tab col s3"><a href="#placement">Placement</a></li>
+            <li class="tab col s3"><a href="#journal">Journal</a></li>
+            <li class="tab col s3"><a href="#eventco">Events</a></li>
+          </ul>
+        </div>
+
+        <div id="cordinators" class="row">
+          <div class="row">
+            <p class="title">CO-ORDINATORS</p>
+          </div>
+          <div class="row center pad10">
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 cyan size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/sudheer_shetty.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                 Sudheer Shetty
+                               </span><br/><span class="white-text caption pad5">
+                                 President
+                               </span>
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 cyan size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/shailesh.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                 Shailesh Shetty S
+                               </span><br/><span class="white-text caption pad5">
+                                 Co-Ordinator
+                               </span>
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 cyan size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/shishir_shetty.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                 Shishir Shetty
+                               </span><br/><span class="white-text caption pad5">
+                                 Vice President
+                               </span>
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 cyan size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/supravi_rai.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                 Supravi Rai
+                               </span><br/><span class="white-text caption pad5">
+                                 Secretary
+                               </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10 pad5top">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/monisha_tharkar.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                   Monisha Tarkar
+                                 </span><br/><span class="white-text caption pad5">
+                                   Joint Secretary
+                                 </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div id="cultural" class="row">
+          <div class="row">
+            <p class="title">CULTURAL</p>
+          </div>
+          <div class="row center pad10">
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/Cultural/deepali.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                 Deepali S
+                               </span><br/><span class="white-text caption pad5">
+                                 Cultural Secretary
+                               </span>
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/Cultural/athulya_chandrashekhar.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                  Athulya Chandrasekar
+                               </span><br/><span class="white-text caption pad5">
+                                 Cultural Secretary
+                               </span>
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/Cultural/sefali.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                 Shefali BS
+                               </span><br/><span class="white-text caption pad5">
+                                 Joint Cultural Secretary
+                               </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/Cultural/shreya_gudigar.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                   Shreya D G
+                                </span><br/><span class="white-text caption pad5">
+                                   Joint Cultural Secretary
+                                </span>
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10 pad5top">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/Cultural/shreyas_kammath.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                  Shreyas S Kamath
+                               </span><br/><span class="white-text caption pad5">
+                                  Joint Cultural Secretary
+                               </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div id="sports" class="row">
+          <div class="row">
+            <p class="title">SPORTS</p>
+          </div>
+          <div class="row center pad10">
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/sports/vidhyabhushan_vk.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                      Vidyabhushan v k
+                   </span><br/><span class="white-text caption pad5">
+                     Sports Secretary
+                   </span>
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/sports/srilaxmi_v_shetty.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                     Srilaxmi V Shetty
+                   </span><br/><span class="white-text caption pad5">
+                      Sports Secretary
+                   </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/sports/krithesh.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                      Krithesh Bhandary
+                    </span><br/><span class="white-text caption pad5">
+                       Joint Sports Secretary
+                    </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/sports/charan.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                      Charan Raj
+                    </span><br/><span class="white-text caption pad5">
+                       Joint Sports Secretary
+                    </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/sports/manju.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                      Manjunath S Koralli
+                    </span><br/><span class="white-text caption pad5">
+                       Joint Sports Secretary
+                    </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/sports/souravi.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                        Souravi A.P
+                      </span><br/><span class="white-text caption pad5">
+                         Joint Sports Secretary
+                      </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="technical" class="row">
+          <div class="row">
+            <p class="title">TECHNICAL</p>
+          </div>
+          <div class="row center pad10">
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/technical/pavi3_b_shetty.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                          Pavithree B Shetty
+                        </span><br/><span class="white-text caption pad5">
+                           Technical Secretary
+                        </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/technical/sumana_kottary.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                            Sumana Kottary
+                          </span><br/><span class="white-text caption pad5">
+                             Joint Technical Secretary
+                          </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/technical/jahaz.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                            Jehad Mohammed
+                          </span><br/><span class="white-text caption pad5">
+                             Joint Technical Secretary
+                          </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/technical/riya_batra.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                            Riya Batra
+                          </span><br/><span class="white-text caption pad5">
+                             Joint Technical Secretary
+                          </span>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div id="placement" class="row">
+          <div class="row">
+            <p class="title">PLACEMENT</p>
+          </div>
+          <div class="row center pad10">
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/placement/prithvi_shree.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                Prithvi Shree
+                            </span><br/><span class="white-text caption pad5">
+                               Placement Co-Ordinator
+                            </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/placement/chaithrika_s.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                            Chaithrika S
+                              </span><br/><span class="white-text caption pad5">
+                                 Joint Placement Co.
+                              </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/placement/suhas_kandiga.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                      Suhas Kandiga
+                                </span><br/><span class="white-text caption pad5">
+                                   Joint Placement Co.
+                                </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/placement/rajitha_raji.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                        Rajitha Ramakrishna
+                                  </span><br/><span class="white-text caption pad5">
+                                     Joint Placement Co.
+                                  </span>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div id="journal" class="row">
+          <div class="row">
+            <p class="title">JOURNAL</p>
+          </div>
+          <div class="row center pad10">
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/Journal/namana_padiyar.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                          Namana Padiyar
+                                    </span><br/><span class="white-text caption pad5">
+                                       Journal Head
+                                    </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/Journal/anusha_pj.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                            Anusha PJ
+                                      </span><br/><span class="white-text caption pad5">
+                                         Joint Journal Co.
+                                      </span>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div id="eventco" class="row">
+          <div class="row">
+            <p class="title">EVENTS</p>
+          </div>
+          <div class="row center pad10">
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/events/megha_m_rai.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                              Meghna M Rai
+                                        </span><br/><span class="white-text caption pad5">
+                                           Event Co-ordinator
+                                        </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/events/renida_dsouza.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                Renida D'Souza
+                                          </span><br/><span class="white-text caption pad5">
+                                             Event Co-ordinator
+                                          </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/events/bhavishya_n_kotian.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                            Bhavishya N Kotian
+                                            </span><br/><span class="white-text caption pad5">
+                                               Event Co-ordinator
+                                            </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/events/abhijnya.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                              Abhijna hegde
+                                              </span><br/><span class="white-text caption pad5">
+                                                 Event Co-ordinator
+                                              </span>
+
+              </div>
+            </div>
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/events/gautham_pai.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                              Gautham Pai
+                                              </span><br/><span class="white-text caption pad5">
+                                                 Joint Event Co.
+                                              </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/events/priyanka.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                Priyanka Shetty
+                                                </span><br/><span class="white-text caption pad5">
+                                                   Joint Event Co.
+                                                </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/events/navya.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                  Navya Prabhu
+                                                  </span><br/><span class="white-text caption pad5">
+                                                     Joint Event Co.
+                                                  </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/events/raksha_bhandary.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                    Raksha R Bhandary
+                                                    </span><br/><span class="white-text caption pad5">
+                                                       Joint Event Co.
+                                                    </span>
+
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="row">
+            <p class="title">DECORATION</p>
+          </div>
+          <div class="row center pad10">
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/Decoration/ashwitha_jathan.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                          Ashwitha Jathan
+                                                          </span><br/><span class="white-text caption pad5">
+                                                              Decoration Co-ordinator
+                                                          </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/Decoration/himika_shetty.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                            Himika Shetty
+                                                            </span><br/><span class="white-text caption pad5">
+                                                                Decoration Co-ordinator
+                                                            </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/Decoration/Gagana_t_naik.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                              Gagana T Naik
+                                                              </span><br/><span class="white-text caption pad5">
+                                                                  Decoration Co-ordinator
+                                                              </span>
+
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3 pad10">
+              <div class="cards cards-3 teal accent-4 size200 pad10 propic-card">
+                <div class="row center">
+                  <img src="images/members/Decoration/akshatha_a.jpg" class="propic circle mar5top" />
+                </div>
+                <span class="white-text name">
+                                                Akshatha A
+                                                                </span><br/><span class="white-text caption pad5">
+                                                                    Decoration Co-ordinator
+                                                                </span>
+
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+      <!--here-->
+
+
+    </div>
+    <!-- container ends -->
+  </div>
+  <div id="about" class="col s12">
+    <div class="hero"></div>
+    <div class="container">
+      <div class="cards cards-3">
+        <div class="row">
+          <div class="col s12">
+            <p class="title">
+              CLOUDS
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="container">
+
+              <header>
+                <p>
+                  <b>Computer Legends Of Unified Department @ Sahyadri , </b> The Department of Computer Science &amp; Engineering
+                  started in the year 2007 with an intake of 60 and is a fast growing discipline and is full of rigorous
+                  practical analysis. The department is planning to grow in supersonic speed as far as Technical expertise;
+                  Faculty Strength, Modern Teaching Aids, Browsing facilities etc. are concerned. The department also interacts
+                  with the industries on a regular basis to develop the capabilities in the latest technologies. The department
+                  has setup the state of the art laboratories with computing facilities and peripheral devices.
+                  <br /> The department has an intake of 180 students in UG (B. E.) category. It also offers a PG Course
+                  i.e. M. Tech. in Computer Science &amp; Engineering with an intake of 24. With highly talented faculty,
+                  the department boasts of a unique mode of learning, one that uses advanced aids for teaching. Our faculty
+                  and students are actively involved in intense interactions that help our students gain practical exposure,
+                  much before they are part of the IT industry. Simulated projects and many times, live projects, give our
+                  students the thrill of livewire action of the software industry. And beyond the technology side of Computer
+                  Science, our curriculum focuses on the behavioral aspects and management perspectives of the Information
+                  Technology.
+                </p>
+              </header>
+
+              <ul class="timeline">
+                <!-- Item 1 -->
+                <li>
+                  <div class="direction-r">
+                    <div class="flag-wrapper">
+                      <span class="hexa"></span>
+                      <span class="flag">Clouds'16</span>
+                      <span class="time-wrapper"><span class="time">Sep 2016</span></span>
+                    </div>
+                    <div class="desc">CLOUDS, the student association for the academic year 2016-17 was inaugurated by Mr. Karthik Bhat, Software
+                      Engineer at the UniCourt Inc. in the presence of Professor Sudheer Shetty, Head of the Department of
+                      Computer Science and Engineering. Prof. Sudheer Shetty welcomed the gathering and delivered the inaugural
+                      address.
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Item 2 -->
+                <li>
+                  <div class="direction-l">
+                    <div class="flag-wrapper">
+                      <span class="hexa"></span>
+                      <span class="flag">Clouds'15</span>
+                      <span class="time-wrapper"><span class="time">Sep 2015</span></span>
+                    </div>
+                    <div class="desc">CLOUDS (Computer Legends Of the Unified Department @ Sahyadri), the student association for the academic
+                      year 2015-16 was inaugurated by Professor Sudheer Shetty, Head of the Department of Computer Science
+                      and Engineering. In his address he laid importance on health and about how attitude affects the success
+                      of a student. This was then followed by Cultural activities by the students.</div>
+                  </div>
+                </li>
+
+                <!-- Item 3 -->
+                <li>
+                  <div class="direction-r">
+                    <div class="flag-wrapper">
+                      <span class="hexa"></span>
+                      <span class="flag">Clouds'14</span>
+                      <span class="time-wrapper"><span class="time">Sep 2014</span></span>
+                    </div>
+                    <div class="desc">CLOUDS 2014-15 was inaugurated by Dr. Antony P. J., Director, PG Studies, KVG College of Engineering,
+                      Sullia. Mr. Sudheer Shetty, HoD and the President of CLOUDS, welcomed the Chief Guest, the staff and
+                      the second year students of the department.</div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="direction-l">
+                    <div class="flag-wrapper">
+                      <span class="hexa"></span>
+                      <span class="flag">TOXICS'13</span></span>
+                      <span class="time-wrapper"><span class="time">2013 - 2014</span></span>
+                    </div>
+                    <div class="desc">TOXICS - Technically Outstanding Experts Of Information And Computer Science And Engineering Various
+                      activities for the academic year 2013-14 of TOXICS-Technically Outstanding experts of Information and
+                      Computer Science and Engineering - a Student Association of the Department of Computer Science Engineering
+                      &amp; Information Science &amp; Engineering was inaugurated by Mr. Sudheer Pakkala, Software Test Manager,
+                      Timken Engineering Research India Pvt. Ltd., Bangalore.</div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="direction-r">
+                    <div class="flag-wrapper">
+                      <span class="hexa"></span>
+                      <span class="flag">TOXICS'12</span>
+                      <span class="time-wrapper"><span class="time">2012 - 2013</span></span>
+                    </div>
+                    <div class="desc">Various activities for the academic year 2012-13 of TOXICS-Technically Outstanding experts of Information
+                      and Computer Science and Engineering – a students’ association of CSE &amp; ISE was inaugurated by
+                      Dr. U. B. Pavanaja, Ex-scientist, BARC, Mumbai.</div>
+                  </div>
+                </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <!-- results tab contents-->
-            <div class="row pad10" id="results">
-                <div class="row">
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Clouds web</h5>
+          <p class="grey-text text-lighten-4">Computer Legends Of Unified Department of Sahyadri</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="http://sahyadri.edu.in">Sahyadri</a></li>
+            <li><a class="grey-text text-lighten-3" href="http://facebook.com/">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="http://instagram.com/">Instagram</a></li>
+            <li><a class="grey-text text-lighten-3" href="http://youtube.com/">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 Copyright Clouds
+        <a class="grey-text text-lighten-4 right" href="http://haxzie.me/">Made with ❤ Haxzie</a>
+      </div>
+    </div>
+  </footer>
 
-                  <!-- add results cards here -->
-                  <%- include('results') %>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".button-collapse").sideNav();
+      $('#main_tabs').tabs({
+        onShow: function (tab) {
+          switch(tab[0].id){
+            case 'events':
+              $('#event_tabs').tabs();
+              break;
+            case 'members':
+              $('#member_tabs').tabs();
+              break;
+          }
+        }
+      });
 
-                </div>
-            </div>
-            <div class="row pad10" id="scoreboard">
+      $('ul.tabs').bind('tab_change', function (event, content) {
+        if (content && content.hash) {
+          console.log('now on tab ' + content.hash);
+        }
+      });
 
-            </div>
+    });
+  </script>
+</body>
 
-            <!-- events sub tab contents -->
-            <div id="allevents"class="row pad10">
-               <div class="col s12 m6 l4">
-                 <div class="card card1 hoverable">
-                   <div class="card-content white-text">
-                     <span class="card-title pad70top">Counter Strike</span>
-                     <p>4 vs 4 inter branch counter strike tournament.</p>
-                   </div>
-                 </div>
-               </div>
-
-               <div class="col s12 m6 l4">
-                 <div class="card card2 hoverable">
-                   <div class="card-content white-text">
-                     <span class="card-title pad70top">Hackathon</span>
-                     <p>24 hour android hackathon on Virtual reality.</p>
-                   </div>
-                 </div>
-               </div>
-
-               <div class="col s12 m6 l4">
-                 <div class="card card3 hoverable">
-                   <div class="card-content white-text">
-                     <span class="card-title pad70top">Foodathon</span>
-                     <p>Hounouring foodies in the right way with food.</p>
-                   </div>
-                 </div>
-               </div>
-
-               <div class="col s12 m6 l4">
-                 <div class="card card4 hoverable">
-                   <div class="card-content white-text">
-                     <span class="card-title pad70top">Code Gladiators</span>
-                     <p>Immerse into full round of code wars on python.</p>
-                   </div>
-                 </div>
-               </div>
-
-               <div class="col s12 m6 l4">
-                 <div class="card card5 hoverable">
-                   <div class="card-content white-text">
-                     <span class="card-title pad70top">Treassure hunt</span>
-                     <p>4x inter branch treasure hunt competition.</p>
-                   </div>
-                 </div>
-               </div>
-
-               <div class="col s12 m6 l4">
-                 <div class="card card6 hoverable">
-                   <div class="card-content white-text">
-                     <span class="card-title pad70top">Tug of war</span>
-                     <p>8 vs 8 inter branch Tug of war competition.</p>
-                   </div>
-                 </div>
-               </div>
-
-             </div>
-
-
-         </div>
-
-     </div>
-     </div>
-
-     <%- include('members') %>
-     <%- include('about') %>
-
-    <%- include('footer') %>
-   </body>
-
- </html>
+</html>
