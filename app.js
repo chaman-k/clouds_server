@@ -50,10 +50,12 @@ app.get('/', function(req, res){
 });
 
 app.get('/console', function(req, res){
-  res.render('console');
+  return res.render('console');
 });
 
-
+app.get('/gallery', function(req, res){
+  return res.render('gallery');
+});
 
 
 app.post('/winners', function(req, res){
