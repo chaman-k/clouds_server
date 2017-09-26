@@ -763,21 +763,6 @@ h3:after {
   height: 20px;
 }
 
-section {
-  column-width: 300px;
-  column-gap: 5px;
-  -moz-column-width: 300px;
-  -moz-column-gap: 5px;
-  -webkit-column-width: 300px;
-  -webkit-column-gap: 5px;
-  padding: 5px;
-}
-
-section img {
-  width: 100%;
-  cursor: pointer;
-}
-
 .lightbox {
   position: fixed;
   width: 100%;

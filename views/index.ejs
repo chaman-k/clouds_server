@@ -5,16 +5,16 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="css/styles.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="css/card_images.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="/css/styles.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="/css/card_images.css" media="screen,projection" />
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:site_name" content="Clouds Sahyadri">
   <meta property="og:title" content="Clouds Sahyadri" />
   <meta property="og:description" content="Computer Legends of Unified Department of Sahyadri" />
-  <meta property="og:image" itemprop="image" content="images/couds_image.png">
+  <meta property="og:image" itemprop="image" content="/images/couds_image.png">
   <meta property="og:type" content="website" />
   <meta property="og:updated_time" content="1440432930" />
 
@@ -79,7 +79,30 @@
 
 
 <body>
+  <!-- Modal Trigger -->
 
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4 class="center">Feedback</h4>
+      <p>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Textarea</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+    </div>
+  </div>
 
 
 
@@ -87,22 +110,22 @@
   <nav class="nav-extended">
     <div class="nav-wrapper light-blue">
       <div class="nav-container">
-        <a href="/" class="brand-logo"><i class="material-icons">cloud</i>clouds</a>
+        <a href="/index" class="brand-logo"><i class="material-icons">cloud</i>clouds</a>
         <!-- <a href="#" class="brand-logo valign-wrapper">&nbsp;<img src="images/clouds_logo.svg" class="responsive-img logo mar5top" width="100px" height="30px"/></a> -->
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="gallery">Gallery</a></li>
           <li><a href="helpline.html">HelpLine</a></li>
-          <li><a href="/feedback">Feedback</a></li>
+          <li><a class="modal-trigger" href="#modal1">Feedback</a></li>
           <li><a href="collapsible.html">Login</a></li>
         </ul>
 
       </div>
 
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="gallery">Gallery</a></li>
         <li><a href="helpline.html">HelpLine</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="feedback">Feedback</a></li>
         <li><a href="collapsible.html">Login</a></li>
       </ul>
     </div>
@@ -388,7 +411,7 @@
         <div id="allevents" class="row pad10">
 
           <div class="col s12 m6 l4">
-            <a href="./event_details.html">
+
               <div class="card card1 hoverable">
                 <div class="card-content white-text">
                   <span class="card-title pad70top"><b>Counter Strike</b></span>
@@ -398,7 +421,7 @@
                           </i>&nbsp;1st floor seminar hall</p>
                 </div>
               </div>
-            </a>
+
 
           </div>
 
@@ -1303,7 +1326,7 @@
             <div class="col s12 m6 l4 pad10">
               <div class="cards cards-3 cyan  pad10 propic-card">
                 <div class="row center">
-                  <img data-src="images/chaman.jpg" class="propic circle mar5top" />
+                  <img data-src="images/chamman.jpg" class="propic circle mar5top" />
                 </div>
                 <span class="white-text name">
                                                Chaman K
@@ -1390,7 +1413,7 @@
         }
       });
 
-
+      $('.modal').modal();
 
 
 

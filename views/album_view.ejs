@@ -17,13 +17,30 @@
   <meta property="og:image" itemprop="image" content="images/couds_image.png">
   <meta property="og:type" content="website" />
   <meta property="og:updated_time" content="1440432930" />
+
+  <style type="text/css">
+    section {
+      column-width: 300px;
+      column-gap: 5px;
+      -moz-column-width: 300px;
+      -moz-column-gap: 5px;
+      -webkit-column-width: 300px;
+      -webkit-column-gap: 5px;
+      padding: 5px;
+    }
+
+    section img {
+      width: 100%;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
   <nav>
     <div class="nav-wrapper light-blue">
       <div class="container">
-        <a href=" /gallery" class="left back_title"><i class="material-icons">arrow_back</i></a>
+        <a href="/gallery" class="left back_title"><i class="material-icons">arrow_back</i></a>
         <ul class="right">
           <li><a href="mobile.html"><i class="material-icons">share</i></a></li>
         </ul>
@@ -90,8 +107,8 @@
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/lazyload.min.js"></script>
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+  <script type="text/javascript" src="/js/lazyload.min.js"></script>
   <script>
     $(document).ready(function () {
       var myLazyLoad = new LazyLoad();
