@@ -52,9 +52,9 @@ app.get('/', function(req, res){
   });
 });
 
-app.get('/console', function(req, res, next){
-  return res.render('console');
-});
+// app.get('/console', function(req, res, next){
+//   return res.render('console');
+// });
 
 
 
@@ -110,44 +110,44 @@ app.get('/album_view', function(req, res, next){
 
 });
 
-app.get('/image_upload', function(req, res, next){
-  return res.render('image_upload');
-});
-
-app.post('/winners', function(req, res){
-//   fs.writeFile('mynewfile3.txt', req.body.data, function (err) {
-//   if (err) throw err;
-//   console.log('Saved!');
+// app.get('/image_upload', function(req, res, next){
+//   return res.render('image_upload');
 // });
-//  req.('eventName', 'Event name is required').notEmpty();
-  // req.checkbody('studentName1', 'Student name is required').notEmpty();
-  // req.checkbody('studentClass1', 'Class is required').notEmpty();
-  //var errors = req.validationErrors();
 
-
-   {
-  console.log(req.body.eventName);
-  console.log(req.body.studentName1);
-  console.log(req.body.studentClass1);
-  console.log(req.body.studentName2);
-  console.log(req.body.studentClass2);
-  console.log(req.body.studentName3);
-  console.log(req.body.studentClass3);
-  var Result = new result({
-    eventName: req.body.eventName,
-    studentName1: req.body.studentName1,
-    studentClass1: req.body.studentClass1,
-    studentName2: req.body.studentName2,
-    studentClass2: req.body.studentClass2,
-    studentName3: req.body.studentName3,
-    studentClass3: req.body.studentClass3
-  });
-  Result.save(function (err){
-      if (err) console.log("error saving event");
-      else console.log("event inserted into db");
-  });
-}
-});
+// app.post('/winners', function(req, res){
+// //   fs.writeFile('mynewfile3.txt', req.body.data, function (err) {
+// //   if (err) throw err;
+// //   console.log('Saved!');
+// // });
+// //  req.('eventName', 'Event name is required').notEmpty();
+//   // req.checkbody('studentName1', 'Student name is required').notEmpty();
+//   // req.checkbody('studentClass1', 'Class is required').notEmpty();
+//   //var errors = req.validationErrors();
+//
+//
+//    {
+//   console.log(req.body.eventName);
+//   console.log(req.body.studentName1);
+//   console.log(req.body.studentClass1);
+//   console.log(req.body.studentName2);
+//   console.log(req.body.studentClass2);
+//   console.log(req.body.studentName3);
+//   console.log(req.body.studentClass3);
+//   var Result = new result({
+//     eventName: req.body.eventName,
+//     studentName1: req.body.studentName1,
+//     studentClass1: req.body.studentClass1,
+//     studentName2: req.body.studentName2,
+//     studentClass2: req.body.studentClass2,
+//     studentName3: req.body.studentName3,
+//     studentClass3: req.body.studentClass3
+//   });
+//   Result.save(function (err){
+//       if (err) console.log("error saving event");
+//       else console.log("event inserted into db");
+//   });
+// }
+// });
 //ensure authenticated for protected routes
 function ensureAuthenticated(req, res, next){
 	if(req.isAuthenticated()){
